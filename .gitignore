@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+.env
+
+# Cache directories
+cache/
+.cache/
+**/cache/
+
+# Backup files
+backup/
+*.bak
+*.bak.*
+*.swp
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Logs
+*.log
+logs/
+
+# Local configuration
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+config.py
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Large binary files
+*.bin
+*.h5
+*.pkl
+*.model
+*.joblib
+
+# Test files
+test_results_*.json
+test_results_*.png
+profiling_results_raw.json
+time_breakdown_results_raw.json 
