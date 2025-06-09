@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: chandigarh-policy-assistant
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements-heavy.txt
+    startCommand: python production_server.py
+    envVars:
+      - key: PINECONE_API_KEY
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: PINECONE_INDEX
+        value: cursor2
+      - key: PINECONE_DIMENSION
+        value: 1024
+      - key: EMBEDDING_MODEL
+        value: BAAI/bge-large-en-v1.5
+      - key: DEFAULT_ALPHA
+        value: 0.7
+      - key: DEFAULT_FUSION_METHOD
+        value: rrf
+    healthCheckPath: /api/health 

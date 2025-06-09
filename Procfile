@@ -1,1 +1,1 @@
-web: python production_server.py 
+web: python lightweight_production_server.py 
