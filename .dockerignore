@@ -1,0 +1,46 @@
+# Cache and temporary files
+cache/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.env
+.venv
+env/
+venv/
+
+# Git files
+.git/
+.gitignore
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test files
+test_*.py
+*_test.py
+quick_performance_test.py
+
+# Documentation
+*.md
+!README.md
+
+# Backup files
+requirements-gpu.txt
+config.py.example
+env.sample
+
+# Large model files (will be downloaded at runtime)
+models/
+*.bin
+*.safetensors
+*.pt
+*.pth 
